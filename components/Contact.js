@@ -16,7 +16,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:3000/contact", {
+      const res = await fetch("https://test-appli-backend.vercel.app/contact", {
         // L'URL doit pointer vers ton backend Express
         method: "POST",
         headers: {
