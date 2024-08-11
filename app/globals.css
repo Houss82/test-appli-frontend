@@ -1,3 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ledger&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Zain:wght@200;300;400;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav-item {
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease-in-out;
+  }
+  .nav-item::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #a7001e; /* Couleur de fond au survol */
+    z-index: -1;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
+  }
+  .nav-item:hover {
+    color: #575a69;
+  }
+
+  .nav-item:hover::before {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  .nav-item:not(:hover)::before {
+    transform-origin: right;
+  }
+
+  .nav-item2 {
+    position: relative;
+    z-index: 1;
+    transition: color 0.1s ease-in;
+    padding: 10px; /* Ajouter du padding ici */
+  }
+  .nav-item2::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Ajuster pour prendre en compte le padding */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2e3244; /* Couleur de fond au survol */
+    border-radius: 8px;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
+  }
+  .nav-item2:hover {
+    color: #fefeff;
+  }
+  .nav-item2:hover::before {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  .nav-item2:not(:hover)::before {
+    transform-origin: right;
+  }
+}
+
+form > div {
+  @apply flex flex-col gap-2;
+}
+input,
+textarea {
+  @apply shadow-md px-6 py-2 border border-allostoreBleu;
+}
+/* global.css */
+
+/* Styles par défaut */
