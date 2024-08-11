@@ -5,10 +5,10 @@ export default function contactPage() {
   return (
     <div>
       <Navbar />
-      <p className="mt-40 text-2xl text-allostoreGris text-center">
-        Welcome to contactPage
-      </p>
-      <Contact />
+      <div className="flex flex-col items-center justify-center">
+        <p className="mt-40 text-2xl text-allostoreGris ">Contactez-nous</p>
+        <Contact />
+      </div>
     </div>
   );
 }
