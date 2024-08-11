@@ -97,7 +97,7 @@ export default function Navbar2() {
                 </p>
               </Link>
               <Link
-                href="./pages/experiencePage"
+                href="/experiencePage"
                 className="text-allostoreBleu  hover:bg-white hover:text-black rounded-lg p-2"
               >
                 <p className=" nav-item2 font-bold  rounded-lg p-2 hover:cursor-pointer ">
