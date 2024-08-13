@@ -1,4 +1,3 @@
-import React from "react";
 import ServiceBox from "./ServiceBox";
 
 export default function BoxTextContent() {
@@ -28,6 +27,8 @@ export default function BoxTextContent() {
     lm:w-3/4
     sm:h-48 
     sm:w-4/5 
+    lg:w-4/5
+    xl:w-7/12
     sm:text-xl 
     sm:mt-12 
     xl:mt-8"

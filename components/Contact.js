@@ -1,5 +1,5 @@
 "use client";
-//Salut les amis
+
 import { useEffect, useState } from "react";
 
 export default function ContactForm() {
@@ -187,7 +187,7 @@ export default function ContactForm() {
         </div>
         <div>
           <textarea
-            className="rounded-md h-32 xl:h-40 mt-2 p-3 xl:p-5"
+            className="rounded-md h-40 xl:h-40 mt-2 p-3 xl:p-5"
             onChange={(e) => setMessage(e.target.value)}
             value={message}
             id="message"

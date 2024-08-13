@@ -10,9 +10,9 @@ export default function Navbar2() {
   };
   return (
     <>
-      <nav className="bg-allostoreBlanc fixed top-0 w-full z-50 shadow-md">
+      <nav className="bg-allostoreBlanc fixed top-0 w-full z-50 shadow-lg">
         <div className="pl-2">
-          <div className="flex items-center justify-between h-18 ">
+          <div className="flex items-center justify-between h-20 ">
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <img
@@ -54,7 +54,7 @@ export default function Navbar2() {
                   </p>
                 </Link>
 
-                <button className="hidden sm:block bg-allostoreRouge text-white ml-2 font-semibold h-auto w-2/6 px-6 py-2 mr-2 rounded-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-allostoreBleu duration-100 animate__animated animate__pulse animate__infinite">
+                <button className="hidden sm:block bg-allostoreRouge text-white ml-2 font-semibold h-auto w-2/6 px-6 py-3 mr-2 rounded-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-allostoreBleu duration-100 animate__animated animate__pulse animate__infinite">
                   Devis GRATUIT !
                 </button>
               </div>
@@ -79,10 +79,10 @@ export default function Navbar2() {
         </div>
         {isClick && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <div className="px-1 pt-1 pb-1 space-y-1 sm:px-3">
               <Link
                 href="/"
-                className="text-allostoreBleu hover:bg-white hover:text-black rounded-lg p-2"
+                className="text-allostoreBleu hover:bg-white hover:text-black rounded-lg p-1"
               >
                 <p className=" nav-item2 font-bold  rounded-lg p-2 hover:cursor-pointer ">
                   Accueil
@@ -90,7 +90,7 @@ export default function Navbar2() {
               </Link>
               <Link
                 href="/servicesPage"
-                className=" text-allostoreBleu  rounded-lg p-2"
+                className=" text-allostoreBleu  rounded-lg p-1"
               >
                 <p className=" nav-item2 font-bold  rounded-lg p-2 hover:cursor-pointer ">
                   Services
@@ -98,7 +98,7 @@ export default function Navbar2() {
               </Link>
               <Link
                 href="/experiencePage"
-                className="text-allostoreBleu  hover:bg-white hover:text-black rounded-lg p-2"
+                className="text-allostoreBleu  hover:bg-white hover:text-black rounded-lg p-1"
               >
                 <p className=" nav-item2 font-bold  rounded-lg p-2 hover:cursor-pointer ">
                   Expérience
@@ -106,7 +106,7 @@ export default function Navbar2() {
               </Link>
               <Link
                 href="/contactPage"
-                className="text-allostoreBleu hover:bg-white hover:text-black rounded-lg p-2"
+                className="text-allostoreBleu hover:bg-white hover:text-black rounded-lg p-1"
               >
                 <p className=" nav-item2 font-bold  rounded-lg p-2 hover:cursor-pointer ">
                   Contact

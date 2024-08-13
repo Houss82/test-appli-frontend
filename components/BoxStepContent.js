@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function BoxStepContent() {
   return (
     <div
@@ -178,7 +176,7 @@ export default function BoxStepContent() {
         <p className="text-allostoreBleu my-5 text-center font-LexendExa">
           Cliquez ici pour obtenir votre devis gratuit
         </p>
-        <button className="bg-allostoreRouge hover:bg-allostoreBleu duration-300 w-2/6 gm:w-3/12 sm:w-3/12 font-semibold p-2 rounded-3xl">
+        <button className="bg-allostoreRouge hover:bg-allostoreBleu duration-300 w-2/6 gm:w-3/12 sm:w-3/12 font-semibold p-2 text-xl rounded-3xl">
           Devis
         </button>
       </div>
