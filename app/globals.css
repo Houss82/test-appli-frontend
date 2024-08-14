@@ -80,6 +80,20 @@ input,
 textarea {
   @apply shadow-md px-6 py-2 border border-allostoreBleu;
 }
+.carousel {
+  overflow-y: auto; /* Permet le défilement vertical */
+  scroll-behavior: smooth;
+}
+
+.carousel-item {
+  flex: none; /* Assure que les items ne se redimensionnent pas */
+  scroll-snap-align: center; /* Assure que les items s'alignent correctement */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Cache la scrollbar pour une apparence plus propre */
+}
+
 /* global.css */
 
 /* Styles par défaut */

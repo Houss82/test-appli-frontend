@@ -68,5 +68,31 @@ module.exports = {
         },
       });
     },
+    require("daisyui"),
   ],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: "#A7001E",
+
+          secondary: "#2E3244",
+
+          accent: "#e5e7e6",
+
+          neutral: "#FEFEFF",
+
+          "base-100": "#FEFEFF",
+
+          info: "#575A69",
+
+          success: "#00ff00",
+
+          warning: "#00ff00",
+
+          error: "#ff0000",
+        },
+      },
+    ],
+  },
 };

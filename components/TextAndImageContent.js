@@ -1,4 +1,4 @@
-import GalleryBox from "./GalleryBox";
+import MapComponent from "./MapComponent";
 
 export default function TextAndImageContent() {
   return (
@@ -126,7 +126,7 @@ export default function TextAndImageContent() {
     >
       <h2>Box-2</h2>
     </div> */}
-      <GalleryBox />
+      <MapComponent />
     </div>
   );
 }

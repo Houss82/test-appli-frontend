@@ -24,7 +24,7 @@ export default function Navbar2() {
             </div>
             <div className="hidden md:flex">
               <div className=" flex items-center justify-between ">
-                <Link href="/" className=" rounded-lg p-2 ">
+                <Link href="/" className="text-allostoreBleu rounded-lg p-2 ">
                   <p className=" nav-item font-semibold p-4  hover:cursor-pointer lg:text-2xl xxl:mr-5">
                     Accueil
                   </p>
@@ -47,7 +47,7 @@ export default function Navbar2() {
                 </Link>
                 <Link
                   href="/contactPage"
-                  className="text-allostoreBleu hover:bg-white hover:text-black rounded-lg p-2"
+                  className="text-allostoreBleu rounded-lg p-2"
                 >
                   <p className=" nav-item font-semibold  rounded-lg p-4 hover:cursor-pointer lg:text-2xl xxl:mr-1">
                     Contact
@@ -80,10 +80,7 @@ export default function Navbar2() {
         {isClick && (
           <div className="md:hidden">
             <div className="px-1 pt-1 pb-1 space-y-1 sm:px-3">
-              <Link
-                href="/"
-                className="text-allostoreBleu hover:bg-white hover:text-black rounded-lg p-1"
-              >
+              <Link href="/" className="text-allostoreBleu rounded-lg p-1">
                 <p className=" nav-item2 font-bold  rounded-lg p-2 hover:cursor-pointer ">
                   Accueil
                 </p>
