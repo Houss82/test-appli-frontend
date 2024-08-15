@@ -1,53 +1,22 @@
-import Script from "next/script";
-import { useEffect } from "react";
-
 export default function MapComponent() {
-  useEffect(() => {
-    const initMap = () => {
-      const map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 43.5804, lng: 7.1251 },
-        zoom: 8,
-      });
-
-      new google.maps.Marker({
-        position: { lat: 43.5804, lng: 7.1251 },
-        map,
-        title: "Antibes",
-      });
-    };
-
-    // Initialiser la carte si Google Maps est chargé
-    if (typeof window !== "undefined" && window.google) {
-      initMap();
-    }
-
-    // Sinon, Google Maps sera chargé par le script async
-    window.initMap = initMap;
-  }, []);
-
   return (
-    <div className="flex flex-col md:flex-row justify-around p-5">
-      {/* Script pour charger l'API Google Maps */}
-      <Script
-        src={`https://maps.googleapis.com/maps/api/js?key=AIzaSyAeBvmYhmTZwkgufkhZMQrYzEaqq_fsVZ0&callback=initMap`}
-        strategy="afterInteractive"
-      />
-
-      {/* Conteneur pour la carte */}
-      <div id="map" className="md:h-96 md:w-96 rounded-lg shadow-lg"></div>
-      <div className="w-2/3 p-5">
-        <p className="text-allostoreBleu font-Blinker text-2xl">
+    <div className="flex flex-col items-center md:flex-row justify-around p-10">
+      <div className=" md:h-auto md:w-2/3 rounded-lg ">
+        <img
+          className="hover:-translate-y-1 hover:scale-110  duration-300"
+          src="/Carte-Alpes-Maritimes-Var-Bouches-du-Rhone.png"
+        />
+      </div>
+      <div className=" text-center md:w-2/3 p-5">
+        <p className="text-allostoreBleu font-Blinker text-xl md:text-2xl">
           N'hésitez pas à nous contacter pour discuter de votre projet, où que
           vous soyez dans ces régions magnifiques. Nous sommes ici pour vous
           offrir des solutions personnalisées, adaptées à vos besoins et à votre
           style.
         </p>
         <div className="flex flex-col items-center">
-          <p className="p-5 text-center text-allostoreBleu font-Blinker text-2xl">
-            Où sommes-nous et où intervenons-nous ?
-          </p>
           <button
-            className="btn bg-allostoreRouge text-allostoreBlanc hover:text-allostoreRouge w-[20%] p-4 rounded-full"
+            className="btn bg-allostoreRouge text-allostoreBlanc hover:text-allostoreRouge md:w-[45%] mt-16 md:mt-10 md:p-4 md:m-4 rounded-full"
             onClick={() => document.getElementById("my_modal_1").showModal()}
           >
             En savoir plus

@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function FooterContent() {
   return (
     <div className="flex flex-col m-4">
@@ -31,22 +29,30 @@ export default function FooterContent() {
           <ul className="flex sm:flex-col lg:flex-row">
             <div>
               <li className="p-3 font-semibold text-xs lg:text-sm hover:text-allostoreRouge hover:cursor-pointer">
-                <span className="font-bold text-allostoreRouge mr-1">-</span>
-                Nos services
+                <a href="/servicesPage">
+                  <span className="font-bold text-allostoreRouge mr-1">-</span>
+                  Nos services
+                </a>
               </li>
               <li className="p-3 font-semibold text-xs lg:text-sm hover:text-allostoreRouge hover:cursor-pointer">
-                <span className="font-bold text-allostoreRouge mr-1">-</span>
-                Nos préstations
+                <a href="/experiencePage">
+                  <span className="font-bold text-allostoreRouge mr-1">-</span>
+                  Nos préstations
+                </a>
               </li>
               <li className="p-3 font-semibold text-xs lg:text-sm hover:text-allostoreRouge hover:cursor-pointer">
-                <span className="font-bold text-allostoreRouge mr-1">-</span>
-                Contact
+                <a href="/contactPage">
+                  <span className="font-bold text-allostoreRouge mr-1">-</span>
+                  Contact
+                </a>
               </li>
             </div>
             <div>
               <li className="lg:ml-5 p-3 font-semibold text-xs lg:text-sm hover:text-allostoreRouge hover:cursor-pointer">
-                <span className="font-bold text-allostoreRouge mr-1">-</span>
-                Qui sommes-nous
+                <a href="/">
+                  <span className="font-bold text-allostoreRouge mr-1">-</span>
+                  Qui sommes-nous
+                </a>
               </li>
               <li className="lg:ml-5 p-3 font-semibold text-xs lg:text-sm hover:text-allostoreRouge hover:cursor-pointer">
                 <span className="font-bold text-allostoreRouge mr-1">-</span>

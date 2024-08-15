@@ -24,14 +24,17 @@ export default function experiencePage() {
           et professionnalisme pour répondre à vos besoins.
         </p>
         <Caroussel />
-        <a
-          href="/contactPage"
-          className="underline decoration-allostoreRouge decoration-2 text-center text-lg text-gray-700 mt-6 w-2/3 font-bold font-LexendExa hover:text-allostoreRouge hover:decoration-allostoreBleu"
-          style={{ textUnderlineOffset: "5px" }}
-        >
-          Contactez-nous pour plus d'informations ou pour discuter de votre
-          projet. Nous sommes ici pour vous accompagner à chaque étape.
+      </div>
+      <div className="flex flex-col items-center bg-allostoreSaumon ">
+        <a href="/contactPage" style={{ textUnderlineOffset: "5px" }}>
+          <p className="underline decoration-allostoreRouge decoration-2 text-center text-2xl text-allostoreBleu mt-6 font-bold font-LexendExa hover:text-allostoreRouge hover:decoration-allostoreBleu ">
+            Contactez-nous
+          </p>
         </a>
+        <p className="font-LexendExa p-3 pb-10">
+          Pour plus d'informations ou pour discuter de votre projet. Nous sommes
+          ici pour vous accompagner à chaque étape.
+        </p>
       </div>
       <FooterContent />
     </>
