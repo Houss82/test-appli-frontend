@@ -30,8 +30,7 @@ export default function MapComponent() {
                 Bienvenue chez AlloStore, votre expert en menuiserie basé à
                 Antibes, au cœur des Alpes-Maritimes. Nous sommes fiers de
                 desservir non seulement Antibes, mais également toute la région
-                des Alpes-Maritimes, y compris les villes voisines comme Nice,
-                Cannes, et Grasse. Grâce à notre emplacement stratégique, nous
+                des Alpes-Maritimes. Grâce à notre emplacement stratégique, nous
                 intervenons rapidement et efficacement sur l'ensemble de la Côte
                 d'Azur. Que vous soyez dans les Alpes-Maritimes, dans le Var, ou
                 même à Monaco, nous sommes à votre service pour tous vos projets

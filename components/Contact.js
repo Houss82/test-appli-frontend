@@ -141,7 +141,7 @@ export default function ContactForm() {
     <div className="flex flex-col items-center w-11/12">
       <form
         onSubmit={handleSubmit}
-        className="py-4  px-10 sm:px-20 bg-gradient-to-r from-slate-900 to-slate-700 mt-4 border-t flex flex-col gap-5 w-5/6 sm:w-2/3 xxl:w-3/5"
+        className="py-4  px-10 sm:px-20 bg-gradient-to-r from-allostoreBleu to-slate-700  mt-4 border-t flex flex-col gap-5 w-5/6 sm:w-2/3 xxl:w-3/5"
       >
         <div>
           <input

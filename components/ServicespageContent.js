@@ -1,6 +1,6 @@
 export default function ServicespageContent() {
   return (
-    <div className="">
+    <div className="flex flex-col ">
       <header>
         <h1>Nos Services</h1>
         <p>
