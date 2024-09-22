@@ -10,7 +10,7 @@ export default function contactPage() {
       </div>
       <div className="">
         <img
-          className=" w-full h-auto xxl:h-[70vh] object-cover "
+          className=" w-full h-auto md:h-[70vh] md:mt-16 xxl:h-[70vh] object-cover "
           src="/contact-us2.jpg"
           alt="contact image"
         />

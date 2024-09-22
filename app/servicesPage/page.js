@@ -10,19 +10,19 @@ export default function servicesPage() {
       <div>
         <Navbar />
       </div>
-      <div className="mt-20">
+      <div className="">
         <img
           src="/dining-room.jpg"
           alt="homme debout"
-          className="w-full xxl:h-[70vh]  object-cover"
+          className="w-full h-auto md:h-[70vh] md:mt-16 xxl:h-[70vh]  object-cover"
         />
       </div>
       <div className="flex flex-col items-center justify-center text-allostoreBleu p-4 m-10">
         <h3 className=" tracking-wide font-bold font-Blinker text-4xl text-allostoreRouge text-center">
           Nos Services de Menuiserie
         </h3>
-        <div className="mt-14 flex flex-col items-center lg:flex-row font-Blinker justify-evenly">
-          <div className="lg:w-1/3 flex flex-col items-center ">
+        <div className="mt-14 flex flex-col items-center  font-Blinker justify-evenly">
+          <div className=" flex flex-col items-center ">
             <p className=" text-allostoreBleu text-2xl font-LexendExa font-semibold text-center lg:text-left ">
               Chez AlloStore, nous proposons une large gamme de services de
               menuiserie pour répondre à tous vos besoins en matière
@@ -33,14 +33,14 @@ export default function servicesPage() {
               className="flex justify-center mb-5 lg:mb-0 "
             >
               <img
-                className="w-[20%] bg-allostoreSaumon mt-4 mb-5 rounded-full hover:bg-allostoreGris"
+                className="w-[20%] bg-allostoreSaumon mt-6 mb-5 rounded-full hover:bg-allostoreGris"
                 src="/servicesBleu.png"
                 alt="icon service"
               />
             </a>
           </div>
-          <div className="lg:w-1/3 flex flex-col items-center">
-            <p className=" text-allostoreBleu text-2xl">
+          <div className=" flex flex-col items-center">
+            <p className=" text-allostoreBleu text-2xl ">
               Quelle que soit la nature de votre projet, nous sommes à votre
               disposition pour vous conseiller et vous accompagner dans la
               réalisation de vos idées. <br />
